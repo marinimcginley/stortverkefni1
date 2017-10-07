@@ -1,0 +1,55 @@
+body {
+	width: 100%;
+	
+	padding-top: 50px;
+	font-size: 12px;
+}
+
+.container {
+	border: 0px;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+	flex-wrap: wrap;
+
+
+}
+
+.personal_info {
+	width: 80%;
+	flex: 1;
+	flex-grow: 1;
+	
+}
+
+.paying_method {
+	width: 80%;
+	flex: 1;
+	flex-grow: 1;
+	
+}
+
+.text {
+	width: 60%;
+}
+
+.card-select {
+	width: 60%;
+}
+
+.heading {
+	font-size: 30px;
+}
+
+.duration {
+	display: inline-flex;
+}
+
+.month {
+	flex: 1;
+}
+
+.year {
+	flex: 1;
+}
