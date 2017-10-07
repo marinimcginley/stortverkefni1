@@ -1,7 +1,7 @@
 <!doctype html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css"
+		<link rel="stylesheet" href="style.css">
 		<title>Kaupa</title>
 	</head>
 	<body>
@@ -10,92 +10,99 @@
 
 		</header>
 		<main>
-			<div class="personal_info">
-				<div class="heading__heading--one">Persónuupplýsingar</div>
-				<div class="name">
-					<p>Nafn:</p>
-					<input type="text">
+			<div class="container">
+				<div class="personal_info">
+					<div class="heading">Persónuupplýsingar</div>
+					<div class="name">
+						<p>Nafn:</p>
+						<input class="text" type="text">
+					</div>
+					<div class="social_security_number">
+						<p>Kennitala:</p>
+						<input class="text" type="text" pattern="[0-9]{1,2,3,4,5,6}-[0-9]{10}"
+										required autofocus placeholder="123456-7890">
+					</div>
+					<div class="gender">
+						<p>Kyn:</p>
+						<form>
+							<input class="gender--specified" type="radio" name="gender" 
+								value="female"> Kona<br>
+							<input class="gender--specified" type="radio" name="gender" 
+								value="male"> Maður<br>
+							<input class="gender--specified" type="radio" name="gender" 
+								value="other"> Annað
+						</form>
+					</div>
+					<div class="phonenumber">
+						<p>Sími:</p>
+						<input class="text" type="tel">
+					</div>
+					<div class="address">
+						<p>Heimilisfang:</p>
+						<input class="text" type="text">
+					</div>
+					<div class="subscription">
+						<input type="checkbox"> Skrá mig á póstlista
+					</div>
 				</div>
-				<div class="social_security_number">
-					<p>Kennitala:</p>
-					<input type="text" pattern="[0-9]{1,2,3,4,5,6}-[0-9]{10}"
-									required autofocus placeholder="123456-7890">
-				</div>
-				<div class="gender">
-					<p>Kyn:</p>
-					<form>
-
-						<input class="gender--specified" type="radio" name="gender" 
-							value="female"> Kona<br>
-						<input class="gender--specified" type="radio" name="gender" 
-							value="male"> Maður<br>
-						<input class="gender--specified" type="radio" name="gender" 
-							value="other"> Annað
-					</form>
-				</div>
-				<div class="phonenumber">
-					<p>Sími:</p>
-					<input type="tel">
-				</div>
-				<div class="address">
-					<p>Heimilisfang:</p>
-					<input type="text">
-				</div>
-				<div class="subscription">
-					<input type="checkbox"> Skrá mig á póstlista
-				</div>
-			</div>
-			<div class="paying_method">
-				<div class="heading__heading--two">Greiðsluupplýsingar</div>
-				<div class="card">
+				<div class="paying_method">
+					<div class="heading">Greiðsluupplýsingar</div>
+						<div class="card">
 					<p>Greiða með:</p>
 					<select class="card-select" name="option">
 						<option value="1">Kreditkorti</option>
 					</select>
-				</div>
-				<div class="name_on_card">
+					</div>
+						<div class="name_on_card">
 					<p>Nafn á korti:</p>
-					<input type="text">
-				</div>
-				<div class="cardnumber">
+					<input class="text" type="text">
+					</div>
+						<div class="cardnumber">
 					<p>Kortanúmer:</p>
-				    <input type="text" pattern="[0-9]{1,2,3,4}-[0-9]{5,6,7,8}-[
+				    <input class="text" type="text" pattern="[0-9]{1,2,3,4}-[0-9]{5,6,7,8}-[
 									0-9]{9,10,11,12}-[0-9]{13,14,15,16}"
 									required autofocus placeholder="5999-9999-9999-9999">
-				</div>
-				<div class="duration"> Gildistími:
-					<div class="month">
-						Mán  
-						<select class="month-select" name="option">
-							<option value="1">01</option>
-							<option value="2">02</option>
-							<option value="3">03</option>
-							<option value="4">04</option>
-							<option value="5">05</option>
-							<option value="6">06</option>
-							<option value="7">07</option>
-							<option value="8">08</option>
-							<option value="9">09</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-						</select>
 					</div>
-					<div class="year">
-						Ár  
-						<select class="year-select" name="option">
-							<option value="1">2017</option>
-							<option value="2">2018</option>
-							<option value="3">2019</option>
-							<option value="4">2020</option>
-							<option value="5">2021</option>
-						</select>	
+					<div class="duration"> 
+						<p>Gildistími:</p>
+						<div class="month">
+							Mán  
+							<select class="month-select" name="option">
+								<option value="1">01</option>
+								<option value="2">02</option>
+								<option value="3">03</option>
+								<option value="4">04</option>
+								<option value="5">05</option>
+								<option value="6">06</option>
+								<option value="7">07</option>
+								<option value="8">08</option>
+								<option value="9">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+						</div>
+						<div class="year">
+							Ár  
+							<select class="year-select" name="option">
+								<option value="1">2017</option>
+								<option value="2">2018</option>
+								<option value="3">2019</option>
+								<option value="4">2020</option>
+								<option value="5">2021</option>
+							</select>	
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="order">
-				<button class="button-button">Panta</button>
+				<button class="button">Panta</button>
 			</div>
 		</main>
+		<footer>
+			
+
+
+		</footer>
 	</body>
 </html>
