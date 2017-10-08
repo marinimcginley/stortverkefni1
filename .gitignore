@@ -1,0 +1,6 @@
+# Allt sem tengist node
+node_modules/
+npm-debug.log
+
+# Erum þegar með styles.scss
+styles.css
