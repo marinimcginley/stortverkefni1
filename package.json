@@ -1,5 +1,5 @@
 {
-  "name": "stortverkefni1",
+  "name": "y",
   "version": "0.6.0",
   "description": "Stórt Verkefni 1 í vefforritun 2017",
   "main": "index.js",
@@ -15,9 +15,17 @@
     "browser-sync": "^2.18.13",
     "npm-run-all": "^4.1.1",
     "stylelint": "^8.1.1",
-    "stylelint-config-primer": "^2.0.1"
+    "stylelint-config-primer": "^2.1.0"
   },
   "dependencies": {
     "node-sass": "^4.5.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FenrirTheR/stortverkefni1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FenrirTheR/stortverkefni1/issues"
+  },
+  "homepage": "https://github.com/FenrirTheR/stortverkefni1#readme"
 }

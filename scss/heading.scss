@@ -1,0 +1,22 @@
+.heading {
+
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.6em;
+  font-family: Merriweather, georgia, serif;
+  font-size: 2rem;
+
+  &--one {
+    margin-top: 0.5em;
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  &--two {
+    font-size: 2rem;
+  }
+
+  &--three {
+    font-size: 1rem;
+  }
+}
