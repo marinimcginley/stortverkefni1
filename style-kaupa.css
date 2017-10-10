@@ -1,83 +1,116 @@
 body {
 	
 	padding-top: 50px;
-	font-size: 12px;
-
+	font-size: 16px;
+	font-family: 'Open Sans', serif;
 	margin: auto;
+}
 
-	/*display: flex;
-	*/
-
+* {
+	font-family: 'Open Sans', serif;
 }
 
 .container {
+
+	max-width: 1200px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: space-around;
-	
-	
-	width: 100%;
-	margin: 40px auto 0 auto;
-	
+	grid-row-gap: 20px; 
 
 }
 
+
+
 .personal_info {
-	max-width: 80%;
-	flex: 1;
-	flex-grow: 1;
-	
-	margin-left: 10%;
-	
-	
+	font-family: 'Open Sans', serif;
+	width: 100%;
+	grid-column-start: 2;
+	grid-column-end: 6;	
 }
 
 .paying_method {
-	max-width: 80%;
-	flex: 1;
-	flex-grow: 1;
-	
-	
-
-	
+	width: 100%;
+	grid-column-start: 8;
+	grid-column-end: 12;	
 }
 
+.name {
+	margin-bottom: 5%;
+}
+
+.social_security_number {
+	margin-bottom: 5%;
+}
+
+.gender {
+	margin-bottom: 5%;
+}
+
+.phonenumber {
+	margin-bottom: 5%;
+}
+
+.address {
+	margin-bottom: 5%;
+}
+
+.card {
+	margin-bottom: 5%;
+}
+
+.name_on_card {
+	margin-bottom: 5%;
+}
+
+.cardnumber {
+	margin-bottom: 5%;
+}
+
+
+
 .text {
-	width: 60%;
+	width: 100%;
 }
 
 .card-select {
-	width: 60%;
+	width: 100%;
 }
 
 .heading {
-	font-size: 30px;
+	font-size: 2.25em;
+	font-family: 'Roboto Slab';
+	margin-bottom: 5%;
 }
 
 .duration {
 	display: inline-flex;
-	width: 85%;
+	width: 100%;
+
 }
 
 .month {
 	flex: 1;
+	min-width: 100%;
 
 }
 
 .month-select {
-	width: 30%;
-	margin-left: 7%;
-}
-
-.year-select {
-	width: 30%;
+	
 	margin-left: 7%;
 }
 
 .year {
 	flex: 1;
+	min-width: 100%;
+	
 }
+
+.year-select {
+	margin-left: 7%;
+}
+
+
 
 input[type=text] {
 	border-radius: 4px;
@@ -89,6 +122,41 @@ input[type=tel] {
 	border: 2px solid #e6e6e6;
 }
 
+.subscription {
+	margin-top: 5%;
+
+}
+
+.checkmark {
+	background-color: #595959;
+}
+
+.subscription input: checked ~ .checkmark {
+	background-color: #595959;
+}
+
 select {
 	border: 2px solid #e6e6e6;
+}
+
+.order {
+	display: flex;
+	max-width: 1200px;
+	margin-top: 20px;
+}
+.button {
+	display: block;
+	width: 18%;
+	text-align: center;
+	background-color: #595959;
+	padding: 10px 50px;
+	border: 1px solid black;
+	border-radius: 4px;
+	
+	margin: auto;
+	font-weight: bold;
+	color: white;
+
+	
+	
 }
