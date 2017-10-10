@@ -1,5 +1,5 @@
 body {
-	
+
 	padding-top: 50px;
 	font-size: 16px;
 	font-family: 'Open Sans', serif;
@@ -12,17 +12,29 @@ body {
 
 .container {
 
+<<<<<<< HEAD:style-kaupa.css
 	max-width: 1200px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	
 	grid-row-gap: 20px; 
+=======
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+
+	width: 100%;
+	margin: 40px auto 0 auto;
+
+>>>>>>> c9e05a1ed4e6c1476e2931dac87233eea5084728:scss/kaupa.scss
 
 }
 
 
 
 .personal_info {
+<<<<<<< HEAD:style-kaupa.css
 	font-family: 'Open Sans', serif;
 	width: 100%;
 	grid-column-start: 2;
@@ -61,6 +73,25 @@ body {
 
 .name_on_card {
 	margin-bottom: 5%;
+=======
+	max-width: 80%;
+	flex: 1;
+	flex-grow: 1;
+
+	margin-left: 10%;
+
+
+}
+
+.paying_method {
+	max-width: 80%;
+	flex: 1;
+	flex-grow: 1;
+
+
+
+
+>>>>>>> c9e05a1ed4e6c1476e2931dac87233eea5084728:scss/kaupa.scss
 }
 
 .cardnumber {
