@@ -12,13 +12,11 @@ body {
 
 .container {
 
-<<<<<<< HEAD:style-kaupa.css
 	max-width: 1200px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-	
-	grid-row-gap: 20px; 
-=======
+
+	grid-row-gap: 20px;
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -27,24 +25,21 @@ body {
 	width: 100%;
 	margin: 40px auto 0 auto;
 
->>>>>>> c9e05a1ed4e6c1476e2931dac87233eea5084728:scss/kaupa.scss
-
 }
 
 
 
 .personal_info {
-<<<<<<< HEAD:style-kaupa.css
 	font-family: 'Open Sans', serif;
 	width: 100%;
 	grid-column-start: 2;
-	grid-column-end: 6;	
+	grid-column-end: 6;
 }
 
 .paying_method {
 	width: 100%;
 	grid-column-start: 8;
-	grid-column-end: 12;	
+	grid-column-end: 12;
 }
 
 .name {
@@ -73,7 +68,6 @@ body {
 
 .name_on_card {
 	margin-bottom: 5%;
-=======
 	max-width: 80%;
 	flex: 1;
 	flex-grow: 1;
@@ -89,9 +83,6 @@ body {
 	flex-grow: 1;
 
 
-
-
->>>>>>> c9e05a1ed4e6c1476e2931dac87233eea5084728:scss/kaupa.scss
 }
 
 .cardnumber {
@@ -127,14 +118,14 @@ body {
 }
 
 .month-select {
-	
+
 	margin-left: 7%;
 }
 
 .year {
 	flex: 1;
 	min-width: 100%;
-	
+
 }
 
 .year-select {
@@ -162,7 +153,7 @@ input[type=tel] {
 	background-color: #595959;
 }
 
-.subscription input: checked ~ .checkmark {
+.subscription input:checked ~ .checkmark {
 	background-color: #595959;
 }
 
@@ -183,11 +174,11 @@ select {
 	padding: 10px 50px;
 	border: 1px solid black;
 	border-radius: 4px;
-	
+
 	margin: auto;
 	font-weight: bold;
 	color: white;
 
-	
-	
+
+
 }
