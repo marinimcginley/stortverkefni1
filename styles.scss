@@ -1,7 +1,7 @@
 /* Mikið notaðar breytur. */
 $max-width: 1200px;
 $gutter: 20px;
-$base-font-size: 16px;
+$base-font-size: 16;
 
 html { /* stylelint-disable-line */
   box-sizing: border-box;
@@ -9,7 +9,7 @@ html { /* stylelint-disable-line */
   margin-left: $gutter;
 
   font-family: "Open Sans", helvetica, arial, sans-serif;
-  font-size: $base-font-size;
+  font-size: $base-font-size + px;
 
   @media (min-width: $max-width) {
     margin: 0;
@@ -41,7 +41,7 @@ main { /* stylelint-disable-line */
     Notkun: font-size(32) skilar 2rem ef html { font-size: 16px; } */
 @mixin font-size($size: $base-font-size) {
   font-size: $size + px;
-  font-size: $size/$base-font-size + rem;
+  font-size: $size/$base-font-size + rem; // Fallback fyrir eldri vafra.
 }
 
 @import "scss/grid";
