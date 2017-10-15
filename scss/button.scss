@@ -1,22 +1,20 @@
 .button {
+  @include font-size();
   display: inline-block;
   width: 100%;
   max-width: 256px;
   padding: 10px 5px;
   margin: 0 auto;
   overflow: hidden;
-  font-family: Lato, helvetica, arial, sans-serif;
-  font-size: 1rem;
   color: #eee;
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
   background-color: #666;
   border: 1px solid #666;
   border-radius: 4px;
-
-  cursor: pointer;
 
   &:hover {
     color: #eee;
@@ -25,20 +23,17 @@
     transition-timing-function: ease-out;
   }
 
-  &--inverted {
+  &--nav {
     color: #666;
     background-color: #eee;
   }
 
-  &--inverted:hover {
+  &--nav:hover {
     color: #333;
     background-color: #ccc;
   }
 
-  &--disabled,
-  &--disabled:hover {
-    color: #999;
-    background-color: #eee;
-    border-color: #eee;
+  &--disabled {
+    display: none;
   }
 }
