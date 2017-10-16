@@ -40,6 +40,10 @@
     @include columns(1);
   }
 
+  &-0 {
+    @include columns(0);
+  }
+
   &-md {
     @media (max-width: 1199px) {
       &-12 {
@@ -64,6 +68,10 @@
 
       &-1 {
         @include columns(1);
+      }
+
+      &-0 {
+        @include columns(0);
       }
     }
   }
@@ -92,6 +100,10 @@
 
       &-1 {
         @include columns(1);
+      }
+
+      &-0 {
+        @include columns(0);
       }
     }
   }
