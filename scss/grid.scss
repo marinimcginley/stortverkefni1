@@ -24,6 +24,10 @@
     @include columns(8);
   }
 
+  &-6 {
+    @include columns(6);
+  }
+
   &-4 {
     @include columns(4);
   }
@@ -36,10 +40,58 @@
     @include columns(1);
   }
 
+  &-md {
+    @media (max-width: 1199px) {
+      &-12 {
+        @include columns(12);
+      }
+
+      &-8 {
+        @include columns(8);
+      }
+
+      &-6 {
+        @include columns(6);
+      }
+
+      &-4 {
+        @include columns(4);
+      }
+
+      &-2 {
+        @include columns(2);
+      }
+
+      &-1 {
+        @include columns(1);
+      }
+    }
+  }
+
   &-sm {
     @media (max-width: 599px) {
       &-12 {
         @include columns(12);
+      }
+
+      &-8 {
+        @include columns(8);
+      }
+
+      &-6 {
+        @include columns(6);
+      }
+
+      &-4 {
+        @include columns(4);
+      }
+
+      &-2 {
+        @include columns(2);
+      }
+
+      &-1 {
+        @include columns(1);
       }
     }
   }
