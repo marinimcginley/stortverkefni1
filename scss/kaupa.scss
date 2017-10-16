@@ -1,7 +1,7 @@
-.index {
+.kaupa {
   min-width: 100%;
   min-height: 100%;
-  background-image: url("img/bg.jpg");
+  background-image: url("img/bg-subpage.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top left;
@@ -18,18 +18,18 @@
 
 .intro {
   min-height: 100vh;
-  justify-content: center;
+  /*justify-content: center;*/
   align-content: center;
 }
 
 .heading {
   &--indexOne {
-    @include font-size(36);
+    @include font-size(72);
     text-align: center;
   }
 
   &--indexTwo {
-    @include font-size(72);
+    @include font-size(36);
     text-align: center;
   }
 }
