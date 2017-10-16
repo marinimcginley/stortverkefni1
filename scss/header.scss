@@ -1,3 +1,14 @@
-.header {
-  padding-top: 0.5em;
+header {
+  position: fixed;
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+
+  .li {
+    list-style: none;
+  }
+
+  .intro {
+    background: url"(img/bg.jpg)" no-repeat fixed 50% 50%;
+  }
+
 }

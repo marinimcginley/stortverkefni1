@@ -28,6 +28,14 @@
     @include columns(4);
   }
 
+  &-2 {
+    @include columns(2);
+  }
+
+  &-1 {
+    @include columns(1);
+  }
+
   &-sm {
     @media (max-width: 599px) {
       &-12 {
