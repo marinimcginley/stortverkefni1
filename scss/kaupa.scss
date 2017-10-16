@@ -1,184 +1,42 @@
-body {
+.index {
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
 
-	padding-top: 50px;
-	font-size: 16px;
-	font-family: 'Open Sans', serif;
-	margin: auto;
+  @media (min-width: 600px) {
+    background-position: top center;
+  }
+
+  @media (min-width: 1200px) {
+    background-position: center;
+    background-size: cover;
+  }
 }
 
-* {
-	font-family: 'Open Sans', serif;
-}
-
-.container {
-
-	max-width: 1200px;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-	grid-row-gap: 20px;
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: space-around;
-
-
-	width: 100%;
-	margin: 40px auto 0 auto;
-
-}
-
-
-
-.personal_info {
-	font-family: 'Open Sans', serif;
-	width: 100%;
-	grid-column-start: 2;
-	grid-column-end: 6;
-}
-
-.paying_method {
-	width: 100%;
-	grid-column-start: 8;
-	grid-column-end: 12;
-}
-
-.name {
-	margin-bottom: 5%;
-}
-
-.social_security_number {
-	margin-bottom: 5%;
-}
-
-.gender {
-	margin-bottom: 5%;
-}
-
-.phonenumber {
-	margin-bottom: 5%;
-}
-
-.address {
-	margin-bottom: 5%;
-}
-
-.card {
-	margin-bottom: 5%;
-}
-
-.name_on_card {
-	margin-bottom: 5%;
-	max-width: 80%;
-	flex: 1;
-	flex-grow: 1;
-
-	margin-left: 10%;
-
-
-}
-
-.paying_method {
-	max-width: 80%;
-	flex: 1;
-	flex-grow: 1;
-
-
-}
-
-.cardnumber {
-	margin-bottom: 5%;
-}
-
-
-
-.text {
-	width: 100%;
-}
-
-.card-select {
-	width: 100%;
+.intro {
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
 }
 
 .heading {
-	font-size: 2.25em;
-	font-family: 'Roboto Slab';
-	margin-bottom: 5%;
+  &--indexOne {
+    @include font-size(36);
+    text-align: center;
+  }
+
+  &--indexTwo {
+    @include font-size(72);
+    text-align: center;
+  }
 }
 
-.duration {
-	display: inline-flex;
-	width: 100%;
-
-}
-
-.month {
-	flex: 1;
-	min-width: 100%;
-
-}
-
-.month-select {
-
-	margin-left: 7%;
-}
-
-.year {
-	flex: 1;
-	min-width: 100%;
-
-}
-
-.year-select {
-	margin-left: 7%;
-}
-
-
-
-input[type=text] {
-	border-radius: 4px;
-	border: 2px solid #e6e6e6;
-}
-
-input[type=tel] {
-	border-radius: 4px;
-	border: 2px solid #e6e6e6;
-}
-
-.subscription {
-	margin-top: 5%;
-
-}
-
-.checkmark {
-	background-color: #595959;
-}
-
-.subscription input:checked ~ .checkmark {
-	background-color: #595959;
-}
-
-select {
-	border: 2px solid #e6e6e6;
-}
-
-.order {
-	display: flex;
-	max-width: 1200px;
-	margin-top: 20px;
-}
 .button {
-	display: block;
-	width: 18%;
-	text-align: center;
-	background-color: #595959;
-	padding: 10px 50px;
-	border: 1px solid black;
-	border-radius: 4px;
-
-	margin: auto;
-	font-weight: bold;
-	color: white;
-
-
-
+  &--indexOne {
+    @include flow-size();
+  }
 }
+
