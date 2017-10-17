@@ -1,11 +1,16 @@
 .header {
-  max-width: $max-width;
-  padding: 0 $gutter;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  display: block;
+  width: 100%;
+  min-height: 5vh;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
 
   .nav {
-    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 0 $gutter;
+    display: block;
   }
 
   .nav-box {
@@ -14,11 +19,14 @@
 
   .nav-item {
     display: inline-block;
+    float: right;
+    padding: 0.1rem;
 
     .nav-link {
       display: block;
       padding: 6px 12px;
       text-decoration: none;
+      color: white;
     }
   }
 }
