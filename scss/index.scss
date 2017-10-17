@@ -1,41 +1,69 @@
 .index {
-  min-width: 100%;
-  min-height: 100%;
-  background-image: url("img/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top left;
-
-  @media (min-width: 600px) {
-    background-position: top center;
-  }
-
-  @media (min-width: 1200px) {
-    background-position: center;
-    background-size: cover;
-  }
-
   .intro {
     min-height: 100vh;
+    text-align: center;
+
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top left;
+
     justify-content: center;
     align-content: center;
 
+    @media (min-width: 600px) {
+      background-position: top center;
+    }
+
+    @media (min-width: 1200px) {
+      background-position: center;
+      background-size: cover;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
     .heading {
+      opacity: 0;
+
       &--one {
         @include font-size(36);
-        text-align: center;
+        animation-name: fade;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
       }
 
       &--two {
         @include font-size(72);
-        text-align: center;
+        animation-name: fade;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
       }
     }
 
     .button {
+      opacity: 0;
+
       &--one {
-        @include font-size();
+        width: 140px;
+
+        animation-name: fade;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
       }
     }
+  }
+
+  .chap1 {
+    height: 70 * 10 + px;
+  }
+
+  .chap2 {
+
   }
 }
