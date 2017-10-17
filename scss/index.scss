@@ -19,16 +19,15 @@
     min-height: 100vh;
     justify-content: center;
     align-content: center;
+    text-align: center;
 
     .heading {
       &--one {
         @include font-size(36);
-        text-align: center;
       }
 
       &--two {
         @include font-size(72);
-        text-align: center;
       }
     }
 

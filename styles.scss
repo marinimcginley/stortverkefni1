@@ -8,6 +8,7 @@ html { /* stylelint-disable-line */
   margin-right: $gutter;
   margin-left: $gutter;
 
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Slab:400,700");
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: $base-font-size + px;
 
@@ -50,8 +51,6 @@ main { /* stylelint-disable-line */
 @import "scss/header";
 @import "scss/footer";
 @import "scss/index";
-
-/* @import "scss/kaupa"; */
-
+@import "scss/kaupa";
 @import "scss/um";
 @import "scss/text";
