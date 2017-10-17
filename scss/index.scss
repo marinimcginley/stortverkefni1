@@ -33,8 +33,16 @@
 
     .button {
       &--one {
-        @include font-size();
+        @include font-size(36);
+        width: 140px;
+        margin-top: 80px;
       }
     }
   }
+
+  .chap1 {
+
+  }
+
+  .chap2 {}
 }
